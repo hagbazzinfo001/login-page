@@ -1,0 +1,40 @@
+body,
+html {
+  margin-top: 3rem;
+  background-color: rgb(58, 58, 107);
+  color: white;
+  margin-inline: 40%;
+}
+
+div {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+input {
+  border-radius: 10px;
+  width: 15rem;
+  height: 2rem;
+}
+#login {
+  background-color: rgb(185, 177, 222);
+  width: 4rem;
+  margin-left: 200%;
+}
+a{
+  color: aliceblue;
+  font-style: italic;
+  text-decoration: none;
+  margin-inline:23%;
+  opacity: 40%;
+}
+fieldset {
+  border-radius: 15px;
+}
+/* #main {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}*\
