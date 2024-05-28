@@ -1,0 +1,57 @@
+header {
+    border-left: 15px solid rgba(255, 0, 0, 0.5);
+    border-top: 10px groove rgba(0, 0, 0, 0.685);
+    background-color: rgb(35, 199, 199);
+    text-align: center;
+    width: 20rem;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: auto;
+    width: 30%;
+    font-weight: bolder;
+  }
+  
+  section {
+    align-items: baseline;
+  }
+  img {
+    width: 520px;
+    height: 350px;
+    margin-right: 2rem;
+    transition: all 1s;
+  }
+  .image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  img:hover {
+    transform: scale(1);
+  }
+  /*.btn {
+    background-color: #4d44f0;
+    border-color: #7844f0;
+    border-radius: 50px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+    color: white;
+  }*/
+  .btn:hover {
+    transform: scale(1.1);
+    transition: all 2s;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  figcaption {
+    text-align: center;
+    margin-left: 2rem;
+  }
+  .column {
+    columns: 2 5rem;
+   }
+  

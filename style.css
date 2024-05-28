@@ -1,3 +1,8 @@
+/* *,::after,::before{
+  padding: 0;
+  margin: 0;
+  box-shadow:border-box;
+} */
 body,
 html {
   margin-top: 3rem;
@@ -23,15 +28,24 @@ input {
   width: 4rem;
   margin-left: 200%;
 }
+#Fp{
+  text-align:center ;
+  opacity: 0.5;
+}
 a{
   color: aliceblue;
   font-style: italic;
   text-decoration: none;
-  margin-inline:23%;
+  margin-inline:30%;
   opacity: 40%;
 }
 fieldset {
   border-radius: 15px;
+}
+link[rel="icon"] {
+  border-radius: 40%;
+  width: 32px;
+  height: 32px;
 }
 /* #main {
   display: flex;
