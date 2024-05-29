@@ -41,6 +41,7 @@ a{
 }
 fieldset {
   border-radius: 15px;
+  border: 1px black solid;
 }
 link[rel="icon"] {
   border-radius: 40%;
