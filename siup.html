@@ -92,6 +92,12 @@
         .container {
   max-width: 960px;
 }
+/* #rebtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 30%;
+} */
       </style>
   
 </head>
@@ -108,28 +114,9 @@
         <p class="lead">Below are field to fill, kindly fill up correctly. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
       </div>
    
-        <div class="col-md-8 col-lg-8">
-          <!-- <h4 class="mb-3">Billing address</h4>
-          <form class="needs-validation" novalidate>
-            <div class="row g-3">
-              <div class="col-sm-4">
-                <label for="firstName" class="form-label">First name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
-                
-
-              </div>
-              <div class="col-sm-4">
-                <label for="lastName" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid last name is required.
-                </div>
-               
-              </div> -->
-              <div class="col-md-9 col-lg-12">
+        <div class="col-md-8 col-lg-10">
+          
+               <div class="col-md-9 col-lg-12">
                 <h4 class="mb-3">Become a Registered Member Now!</h4>
                 <form class="needs-validation" novalidate>
                   <div class="row g-3">
@@ -157,70 +144,31 @@
                       </div>
                     </div>
                   </div>
-                  
-                   
-                </form>
-              </div>
-              
-              
-              <div class="col-12">
-                <label for="username" class="form-label">Username</label>
-                <div class="input-group has-validation">
-                  <span class="input-group-text">@</span>
-                  <input type="text" class="form-control" id="username" placeholder="Username" required>
-                <div class="invalid-feedback">
-                    Your username is required.
+                  <p></p>
+                  <div class="row g-3">
+                 <div class="col-md-5">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country" required>
+                      <option value="">Choose...</option>
+                      <option value="Nigeria">Nigeria</option>
+                      <option value="Diaspora">Diaspora</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid country.
+                    </div>
                   </div>
-                </div>
-              </div>
-  
-              <div class="col-12">
-                <label for="email" class="form-label" >Email <span class="text-body-secondary"></span></label>
-                <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
-                <div class="invalid-feedback">
-                  Please enter a valid email address for shipping updates.
-                </div>
-              </div>
-  
-              <div class="col-12">
-                <label for="address" class="form-label">Address</label>
-                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-                <div class="invalid-feedback">
-                  Please enter your shipping address.
-                </div>
-              </div>
-  
-              <div class="col-12">
-                <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
-                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-              </div>
-  
-              <div class="col-md-5">
-                <label for="country" class="form-label">Country</label>
-                <select class="form-select" id="country" required>
-                  <option value="">Choose...</option>
-                  <option>United States</option>
-                </select>
-                <div class="invalid-feedback">
-                  Please select a valid country.
-                </div>
-              </div>
-              <label for="exampleDataList" class="form-label">Datalist example</label>
-              <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-              <datalist id="datalistOptions">
-                <option value="San Francisco">
-                <option value="New York">
-                <option value="Seattle">
-                <option value="Los Angeles">
-                <option value="Chicago">
-                <option value="San Francisco">
-                  <option value="New York">
-                  <option value="Seattle">
+                  <div class="col-md-4">
+                  <label for="state" class="form-label">State of Origin</label>
+                  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                  <datalist id="datalistOptions">
+                    <option value="San Francisco">
+                    <option value="New York">
+                    <option value="Seattle">
                     <option value="Los Angeles">
                     <option value="Chicago">
-                      <option value="San Francisco">
-                        <option value="New York">
-                        <option value="Seattle">
+                    <option value="San Francisco">
+                      <option value="New York">
+                      <option value="Seattle">
                         <option value="Los Angeles">
                         <option value="Chicago">
                           <option value="San Francisco">
@@ -248,30 +196,155 @@
                                             <option value="Seattle">
                                             <option value="Los Angeles">
                                             <option value="Chicago">
-              </datalist>
-              <div class="col-md-4">
-                <label for="state" class="form-label">State</label>
-                <select class="form-select" id="state" required>
-                  <option value="">Choose...</option>
-                  <option>California</option>
-                </select>
-                <div class="invalid-feedback">
-                  Please provide a valid state.
+                                              <option value="San Francisco">
+                                                <option value="New York">
+                                                <option value="Seattle">
+                                                <option value="Los Angeles">
+                                                <option value="Chicago">
+                  </datalist>
                 </div>
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">Zip codes</label>
+                  <input type="text" class="form-control" id="zip" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Zip code required.
+                  </div>
+                </div>
+                  </div>
+                  <p></p>
+                <div class="row g-3">
+                  <div class="col-md-4">
+                    <label for="state" class="form-label">Local Government Area.</label>
+                    <input type="lga" class="form-control" id="email" placeholder="LGA" required>
+                   </div>
+                  <div class="col-8">
+                   <label for="address" class="form-label">Address</label>
+                   <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                  </div>
+                </div>
+               
+              
+              <!-- <div class="row g-3">
+                <div class="col-5">
+                  <label for="username" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                    </div>
+                     <div class="invalid-feedback">
+                      Your username is required.
+                    </div>
+                  </div>
+                <div class="col-md-7">
+                  <label for="inputPassword6" class="form-label">Password</label>
+                  <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline"placeholder="Must be 8-20 characters long.">
+                  <span id="passwordHelpInline" class="form-text">
+                    Must be 8-20 characters long.
+                  </span>
+                 </div> -->
+                <!-- <div class="col-3">
+                 <label for="address" class="form-label">Address</label>
+                 <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                </div> -->
+               
+                <div class="row g-3">
+               <div class="col-md-6">
+                <label for="cc-name" class="form-label">Faculty</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                 
               </div>
   
-              <div class="col-md-3">
-                <label for="zip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="zip" placeholder="" required>
-                <div class="invalid-feedback">
-                  Zip code required.
+              <div class="col-md-6">
+                <label for="cc-number" class="form-label">Department</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              </div>
                 </div>
+                <p></p>
+            <div class="row g-3">
+              <div class="col-md-6">
+               <h4 class="">Programme</h4>
+               <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                <label class="form-check-label" for="credit">Undergraduate</label>
+              </div>
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="debit">Post-graduate</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="paypal">Diploma</label>
               </div>
             </div>
+
+            <div class="class=col-md-6">
+            <h4 class="">Level</h4>
+               <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                <label class="form-check-label" for="credit">100L</label>
+              </div>
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="debit">200L</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="paypal">3000L</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="paypal">400L</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="paypal">500L</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="paypal">600L</label>
+              </div>
+            </div>
+         </div>
+         <div class="row g-3">
+          <div class="col-5">
+            <label for="formFile" class="form-label">Upload Your Passport</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+         <div class="col-7">
+          <label for="email" class="form-label" >Email <span class="text-body-secondary"></span></label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+          <div class="invalid-feedback">
+            Please enter a valid email address.
+          </div>
+        </div>
+         </div>
+        <p></p>
+           <div class="row g-3">
+           
+         <div class="col-6">
+          <label for="username" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" id="username" placeholder="Username" required>
+            </div>
+             <div class="invalid-feedback">
+              Your username is required.
+            </div>
+          </div>
+           <div class="col-6">
+            <label for="inputPassword6" class="form-label">Password</label>
+            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline"placeholder="">
+            <span id="passwordHelpInline" class="form-text">
+              Must be 8-20 characters long.
+            </span>
+          </div>
+        </div>
+        
+      </div>
   
-            <hr class="my-4">
+             
   
-            <div class="form-check">
+            <!-- <div class="form-check">
               <input type="checkbox" class="form-check-input" id="same-address">
               <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
             </div>
@@ -283,48 +356,9 @@
   
             <hr class="my-4">
   
-            <h4 class="mb-3">Payment</h4>
+ 
   
-            <div class="my-3">
-              <div class="form-check">
-                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                <label class="form-check-label" for="credit">Credit card</label>
-              </div>
-              <div class="form-check">
-                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                <label class="form-check-label" for="debit">Debit card</label>
-              </div>
-              <div class="form-check">
-                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                <label class="form-check-label" for="paypal">PayPal</label>
-              </div>
-            </div>
-  
-            <div class="row gy-3">
-              <div class="col-md-6">
-                <label for="cc-name" class="form-label">Name on card</label>
-                <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                <small class="text-body-secondary">Full name as displayed on card</small>
-                <div class="invalid-feedback">
-                  Name on card is required
-                </div>
-              </div>
-  
-              <div class="col-md-6">
-                <label for="cc-number" class="form-label">Credit card number</label>
-                <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                <div class="invalid-feedback">
-                  Credit card number is required
-                </div>
-              </div>
-  
-              <div class="col-md-3">
-                <label for="cc-expiration" class="form-label">Expiration</label>
-                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                <div class="invalid-feedback">
-                  Expiration date required
-                </div>
-              </div>
+            
   
               <div class="col-md-3">
                 <label for="cc-cvv" class="form-label">CVV</label>
@@ -334,21 +368,26 @@
                 </div>
               </div>
             </div>
-  
+   -->
             <hr class="my-4">
   
-            <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+            <button class="w-50 btn btn-primary btn-lg" type="submit" style="background-color: rgb(19, 227, 19); align-items: center; border: 1px rgb(18, 238, 18) solid; display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-inline: auto;" id="rebtn">Submit!</button>
+                  <hr class="my-4">
+
           </form>
         </div>
       </div>
+      
     </main>
   
     
   </div>
    
-   </html>
-  
-    <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+   
+    <!-- <select class="form-select form-select-lg mb-3" aria-label="Large select example">
         <option selected>Open this select menu</option>
         <option value="1">One</option>
         <option value="2">Two</option>
@@ -357,65 +396,9 @@
     <div class="mb-3">
         <label for="formFile" class="form-label">Default file input example</label>
         <input class="form-control" type="file" id="formFile">
-      </div>
+      </div> -->
       
-    <label for="exampleDataList" class="form-label">Datalist example</label>
-<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-<datalist id="datalistOptions">
-  <option value="San Francisco">
-  <option value="New York">
-  <option value="Seattle">
-  <option value="Los Angeles">
-  <option value="Chicago">
-  <option value="San Francisco">
-    <option value="New York">
-    <option value="Seattle">
-      <option value="Los Angeles">
-      <option value="Chicago">
-        <option value="San Francisco">
-          <option value="New York">
-          <option value="Seattle">
-          <option value="Los Angeles">
-          <option value="Chicago">
-            <option value="San Francisco">
-              <option value="New York">
-              <option value="Seattle">
-              <option value="Los Angeles">
-              <option value="Chicago">
-                <option value="San Francisco">
-                  <option value="New York">
-                  <option value="Seattle">
-                  <option value="Los Angeles">
-                  <option value="Chicago">
-                    <option value="San Francisco">
-                      <option value="New York">
-                      <option value="Seattle">
-                      <option value="Los Angeles">
-                      <option value="Chicago">
-                        <option value="San Francisco">
-                          <option value="New York">
-                          <option value="Seattle">
-                          <option value="Los Angeles">
-                          <option value="Chicago">
-                            <option value="San Francisco">
-                              <option value="New York">
-                              <option value="Seattle">
-                              <option value="Los Angeles">
-                              <option value="Chicago">
-</datalist>
-<div class="row g-3 align-items-center">
-    <div class="col-auto">
-      <label for="inputPassword6" class="col-form-label">Password</label>
-    </div>
-    <div class="col-auto">
-      <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-    </div>
-    <div class="col-auto">
-      <span id="passwordHelpInline" class="form-text">
-        Must be 8-20 characters long.
-      </span>
-    </div>
-  </div>
+  
   <footer class="my-5 pt-5 text-body-secondary text-center text-small">
     <p class="mb-1">&copy; 2024 </p>
     <ul class="list-inline">
