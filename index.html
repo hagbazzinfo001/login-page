@@ -6,12 +6,18 @@
     <title>MSSN-LASU</title>
     <link rel="icon" type="image/x-icon" href="logoo.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <head>
+    <head><script src="../assets/js/color-modes.js"></script>
       <!-- Bootstrap CSS -->
       <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"> -->
-  </head>
-  
+   
     <title>Document</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* *,::after,::before{
             margin: 0;
@@ -52,14 +58,14 @@
              height: 100%;
              
          } */
-        .box{
+        /* .box{
             width: 40%;
             padding: 5% 4%;
             border-radius: 20px;
             color:white;
             background-color:blue;
             margin-top: 7%;
-        } 
+        }  */
  
           
     section{
@@ -121,13 +127,104 @@
         .container{
            
           background-color: aliceblue;
+          border-start-start-radius: 12%;
+          border-start-end-radius: 12%; 
         }
         #bsb:hover{
           transform: scale(1.1);
             transition: 0.7s;
             border: 2px solid rgba(15, 244, 15, 0.3);
         }
+        
+        /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  /* padding-top: 3rem;
+  padding-bottom: 3rem; */
+  color: rgb(var(--bs-tertiary-color-rgb));
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+  .fdf:hover{
+       transition: 1.2s;
+       transform: scale(1.1);
+  }
+}
     </style>
+        <link href="carousel.css" rel="stylesheet">
+
 </head>
 <body>
        
@@ -151,10 +248,10 @@ MSSN-LASU      </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Programmes</a>
+            <a class="nav-link" href="prog.html">Programmes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Donations</a>
+            <a class="nav-link" href="dont.html">Donations</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -192,13 +289,13 @@ MSSN-LASU      </a>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> Arts & Gallery</a>
+              <a class="nav-link" href="gallery.html"> Arts & Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FAQs</a>
+              <a class="nav-link" href="Faq.html">FAQs</a>
             </li>
           <li class="nav-item">
-            <a class="nav-link" href="">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
         </ul>
         <!-- <form class="d-flex" role="search">
@@ -212,258 +309,12 @@ MSSN-LASU      </a>
       </div>
     </div>
   </nav>
-  <!-- - <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In and Sign Up Buttons</title>
-    < Bootstrap CSS 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <div class="container mt-5">
-        <div class="d-flex justify-content-end">
-            <button class="btn btn-primary me-2" onclick="window.location.href='signin.html'">Sign In</button>
-            <button class="btn btn-secondary" onclick="window.location.href='signup.html'">Sign Up</button>
-        </div>
-    </div>
-
-    < Bootstrap JS and dependencies (Optional, for interactive components) -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
- 
-
-     
-         
-    
         <!-- Bootstrap JS and dependencies (Optional, for interactive components) -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    </body>
-    </html>
-    
- <!--     
-     <header class=" zone blue">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"> </a>
-            <img src="logoo.png" width="50" height="50">
-                 <img src="lasu_logo.png" width="50" height="50">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-current="page"
-                    href="#"
-                    >Home</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="register.html"
-                        >Register/sign in</a
-                      >
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="logout.html">log out</a>
-                    </li>
-                  </ul>
-                </li>
-                 
-          
-                <li class="nav-item ">
-                  <a
-                    class="nav-link "
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    New & Update
-                  </a>
-                  
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Services
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Accommodation</a></li>
-            
-                    <li>
-                      <a class="dropdown-item" href="#">Educational Services</a>
-                    </li>
-                    <ul>
-                                            
-                      <li>
-                        <a class="dropdown-item" href="#">Tutorial on campus </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href=""
-                          > MSSN-Lasu E-library   
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href=""
-                          > Madrasah   
-                        </a>
-                      </li>
-                    </ul>
-  
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Scholarship Oppurtunities</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    FAQs
-                  </a>
-                  
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About Us </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="art.html">Art & Gallery</a>
-                </li>
-              </ul>
-   
-            </div>
-            
-          </div>
-          <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2" style=" border: rgb(43, 231, 43) 1px solid;" id="bdg" ><a href="index.html" style="color:black; text-decoration: none;"  >Login</a></button>
-            <button type="button" class="btn btn-primary" style="background-color: rgb(80, 147, 80); color: #ffffff; border: rgb(43, 231, 43) 1px solid;"><a href="#" style="color: #ffffff; text-decoration: none;">Sign-up</a></button>
- </div>
-        </nav>
-      </header>  -->
-      <!-- <section style="width: 100%; margin: 0%;">
-    <div class="container" >
-            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" style="background-color: beige;">
-        
-              <a href="" class="bi bi-bootstrap d-flex  align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-                <img src="logoo.png" width="50" height="50">
-                 <img src="lasu_logo.png" width="50" height="50">
-                <span class="fs-4">MSSN-LASU</span>
-              </a>
-              <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <nav style="margin-left: 0%;">
-        
-              <ul class="nav nav-pills" >
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-
-                <li class="nav-item" ><a href="land.html" class="nav-link active" aria-current="page" id="Home">Home</a></li>
-                <li class="nav-item a"><a href="#" class="nav-link ">Programmes</a></li>
-                <li class="nav-item"><a href="#" class="nav-link  ">Donations</a></li>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Accommodation</a></li>
-          
-                  <li>
-                    <a class="dropdown-item" href="#">Educational Services</a>
-                  </li>
-                  <ul>
-                                          
-                    <li>
-                      <a class="dropdown-item" href="#">Tutorial on campus </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href=""
-                        > MSSN-Lasu E-library   
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href=""
-                        > Madrasah   
-                      </a>
-                    </li>
-                  </ul>
-
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Scholarship Oppurtunities</a
-                    >
-                  </li>
-                </ul>
-                <li class="nav-item"><a href="art.html" class="nav-link  ">Arts& Gallery</a></li>
-                <li class="nav-item"><a href="#" class="nav-link  ">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link  ">About</a></li>
-                <button type="button" class="btn btn-outline-primary me-2" style=" border: rgb(43, 231, 43) 1px solid;" id="bdg" ><a href="index.html" style="color:black; text-decoration: none;"  >Login</a></button>
-                <button type="button" class="btn btn-primary" style="background-color: rgb(80, 147, 80); color: #ffffff; border: rgb(43, 231, 43) 1px solid;"><a href="#" style="color: #ffffff; text-decoration: none;">Sign-up</a></button>
-              </ul>
-              <div class="col-md-3 text-end">
-      </div>
-            </nav>
-               
-    </section>-->
            </div>
-         <h1>MSSN-LASU OFFICIAL</h1>
+         <!-- <h1>MSSN-LASU OFFICIAL</h1> -->
          
             <i class="bi bi-facebook"></i>
             <i class="bi bi-whatsapp"></i>
@@ -471,9 +322,177 @@ MSSN-LASU      </a>
             <i class="bi bi-envelope-at-fill"></i>
             <i class="bi bi-twitter-x"></i>
      
+            <main>
+
+              <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+                      <image href="mosque1.jpg" x="" y="" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"class="opacity-75" style="opacity:0.2;"></image>
+
+                    </svg>
+                    <div class="container">
+                      <div class="carousel-caption text-start">
+                        <h1 style="color: greenyellow;">Muslim Students' Society of Nigeria.</h1>
+                        <p class="opacity">The MSSN LASU Branch, a religious and social group of Muslim students on campus, has been an integral part of the university community since its inception in 1984..</p>
+                        <p><a class="btn btn-lg btn-primary fdf" href="siup.html" style="background-color: rgb(30, 247, 30); border: 1px rgb(16, 245, 16) solid; color: black;" >Sign up today</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+                      <image href="jihad.jpg" x="" y="" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+
+                    </svg>
+                    <div class="container">
+                      <div class="carousel-caption">
+                        <!-- <h1>Another example headline.</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p> -->
+                        <p><a class="btn btn-lg btn-primary fdf" href="#" style="background-color: rgb(4, 11, 4); border: 1px rgb(16, 245, 16) solid; color: rgb(250, 243, 243);">Learn more</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                    <div class="container">
+                      <div class="carousel-caption text-end">
+                        <h1>Call for Advert.</h1>
+                        <p>Are you interested in advertising your products ? Contact us today, tomorrow might be late!.</p>
+                        <p><a class="btn btn-lg btn-primary fdf" href="footer" style="background-color: rgb(30, 247, 30); border: 1px rgb(16, 245, 16) solid; color: black;">Contact us below</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                    <div class="container">
+                      <div class="carousel-caption text-end">
+                        <h1>Art & Gallery.</h1>
+                        <p>This Section contains memories our past event....Stay Updated!!.</p>
+                        <p><a class="btn btn-lg btn-primary fdf" href="gallery.html" style="background-color: rgb(30, 247, 30); border: 1px rgb(16, 245, 16) solid; color: black;">Browse gallery</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            
+            
+              <!-- Marketing messaging and featurettes
+              ================================================== -->
+              <!-- Wrap the rest of the page in another container to center all the content. -->
+            
+              <div class="container marketing">
+            
+                <!-- Three columns of text below the carousel -->
+                <div class="row">
+                  <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+                      <image href="prof.jpg" x="" y="" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+
+                    </svg>
+                    <h2 class="fw-normal"> Prof. Yusuf Babatunde R.
+                    </h2>
+                    <h5 style="opacity: 0.8;">The Chairman, Lasu Muslim Community</h5>
+                    <p> Prof. is the Chairman Lagos State University Muslim Community, He is a Professor of Accounting with over 20years of teaching experience.</p>
+                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+                      <image href="sula.JPG" x="" y="" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+
+                    </svg>
+                    <h2 class="fw-normal">Amir, Sulaimon Kabiawu</h2>
+                    <h5 style="opacity: 0.8;">The Amir, MSSN-LASU</h5>
+
+                    <p>The current Amir of <b>MSSN-LASU</b> which happens to be the 15th Amir, is a 400l student of Faculty of Art, Department of Islamic Study. He is happily married with Kids.</p>
+                    <p><a class="btn btn-secondary" href="#" style="background-color: rgb(30, 247, 30); border: 1px rgb(16, 245, 16) solid; color: black;">View details &raquo;</a></p>
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+                      <image href="amreeah.jpg" x="" y="" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+
+                    </svg>
+                    <h2 class="fw-normal">Sis. Hikmah Shanu</h2>
+                    <h5 style="opacity: 0.8;">The Ameerah, MSSN-LASU</h5>
+                    <p>Sis. Hikmah Shanu is a 500l student of Faculty of Law, She's known for a versatility and enthusiasm towards the advancement of the Muslimahs.   </p>
+                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                  </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            
+            
+                <!-- START THE FEATURETTES -->
+            
+                <hr class="featurette-divider">
+            
+                <div class="row featurette">
+                  <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1"> Dr. Surajudeen Abiodun Fatai. <span class="text-body-secondary" style="font-size: xx-large;">Acting Dean, Students’ Affairs Division of the University.</span></h2>
+                    <p class="lead">Dr. Fatai is a Senior Lecturer in the Department of Political Science, Faculty of Social Sciences of the university. He's an indigene of Ikorodu and has contriducted so well to the academic development of studentes earn before his appointment.</p>
+                  </div>
+                  <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" style="border-radius: 12%;"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+                      <image href="dean.png" x="" y="" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+
+                    </svg>
+                  </div>
+                </div>
+            
+                <hr class="featurette-divider">
+            
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Amir, Adam Kewulere<sub> (Jundullah)</sub> <br><span class="text-body-secondary" style="font-size: xx-large;">The Immediate Past Amir MSSN-LASU.</span></h2>
+                    <p class="lead"> He's a First Class Graduate of Faculty of Education, Aside from his Academic prowess, he has contributed immensely to the Muslim Ummah. </p>
+                    <p class="lead">May Allah make it count on your scale of good deeds, we are proud of you! Baarakallahu feekym.</p>
+                  </div>
+                  <div class="col-md-5 order-md-1">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" style="border-radius: 12%;"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+                      <image href="adam.JPG" x="" y="" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+
+                    </svg>
+                  </div>
+                </div>
+            
+                <hr class="featurette-divider">
+            
+                <div class="row featurette">
+                  <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Olaniyi Mubarak Olawale. <br><span class="text-body-secondary" style="font-size: xx-large;">Best Graduating Student for the 2023/2024 Academic Session  </span></h2>
+                    <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+                  </div>
+                  <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" style="border-radius: 12%;"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+                      <image href="mubarak.JPG" x="" y="" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+
+                    </svg>
+                 
+                  </div>
+                </div>
+            
+                <hr class="featurette-divider">
+            
+                <!-- /END THE FEATURETTES -->
+            
+              </div><!-- /.container -->
+
+
+        <!-- <div class="box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere aliquam qui totam recusandae deserunt voluptate est nam perferendis dolorem fugiat similique, incidunt, distinctio animi necessitatibus. Enim voluptas illo minima.</div>
         <div class="box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere aliquam qui totam recusandae deserunt voluptate est nam perferendis dolorem fugiat similique, incidunt, distinctio animi necessitatibus. Enim voluptas illo minima.</div>
-        <div class="box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere aliquam qui totam recusandae deserunt voluptate est nam perferendis dolorem fugiat similique, incidunt, distinctio animi necessitatibus. Enim voluptas illo minima.</div>
-        <div class="box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere aliquam qui totam recusandae deserunt voluptate est nam perferendis dolorem fugiat similique, incidunt, distinctio animi necessitatibus. Enim voluptas illo minima.</div>
+        <div class="box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere aliquam qui totam recusandae deserunt voluptate est nam perferendis dolorem fugiat similique, incidunt, distinctio animi necessitatibus. Enim voluptas illo minima.</div> -->
 <!-- 
         <footer style="margin-bottom: 0%; margin-top: 0%; background-color: aqua; padding: 2%; padding-right: 1%; width: 100%  ;"  >
 
@@ -514,52 +533,7 @@ MSSN-LASU      </a>
        
         <div class="container" style="min-width: 100%; " >
           <footer class="py-5" style="margin-inline: 2%;"  >
-            <!-- <div class="row">
-              <div class="col-6 col-md-2 mb-3">
-                <h5>Donation </h5>
-                <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Donation to Allah</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> </a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> </a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> </a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> </a></li>
-                </ul>
-              </div>
-        
-              <div class="col-6 col-md-2 mb-3">
-                <h5>Contact Us</h5>
-                <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms and Conditions</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-                </ul>
-              </div>
-        
-              <div class="col-6 col-md-2 mb-3">
-                <h5>Quick Links</h5>
-                <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Our Project</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Downloads</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Publications</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> </a></li>
-                </ul>
-              </div>
-        
-              <div class="col-md-5 offset-md-1 mb-3">
-                <form>
-                  <h5>Subscribe to our newsletter</h5>
-                  <p>Monthly digest of what's new and exciting from us.</p>
-                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                    <label for="newsletter1" class="visually-hidden">Email address</label>
-                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                    <button class="btn btn-primary" type="button" style="background-color: rgb(54, 209, 54);  border: 1px rgb(59, 238, 59) solid;">Subscribe</button>
-                  </div>
-                </form>
-              </div>
-            </div> -->
+          
             <div class="container text-center">
               <!-- Stack the columns on mobile by making one full-width and the other half-width -->
               <div class="row">
@@ -571,7 +545,7 @@ MSSN-LASU      </a>
                       </P>               
                        </div>
       
-                <div class="col-md-9">.
+                <div class="col-md-9">
                   <div class="row">
                       <div class="col-md-2 mb-3">
                         <h5>Donation </h5>
@@ -619,15 +593,7 @@ MSSN-LASU      </a>
                       </div>
                     </div>
                 
-                     <!-- <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                       
-                      <a class="navbar-brand" href="#">
-                          <img src="logoo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top"></a> -->
-                       <!-- <ul class="list-unstyled d-flex">
-                        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-                        <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/mssnlasu?igsh=MXhuOGk4dThydGppNg=="><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-                        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-                      </ul> -->
                       </a>
                     </div>
                 </div>
